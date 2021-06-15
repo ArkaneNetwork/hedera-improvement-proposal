@@ -1,5 +1,5 @@
 * hip: 20
-* title: Remove the need for token association
+* title: Make the need for token association opt in
 * author: Gerbert Vandenberghe (gerbert-vandenberghe) en Davy Van Roy (alpa-coder)
 * type: Standard Track - Service
 * status: Draft
@@ -12,7 +12,7 @@
 
 The need to associate a wallet with a certain token in order to be able to receive this token on the wallet poses usabity issues and makes some business flows that are common practice in the blockchain and NFT space impossible. 
 
-The proposal is to remove the need to explicitly associate a wallet with a token. It can be optional for specific wallets to choose to make token assiciation required.
+The proposal is to remove the need to explicitly associate a wallet with a token. It can be optional for specific wallets to choose to make token assiciation required on an opt-in basis.
 
 ## Motivation
 
@@ -30,7 +30,7 @@ We build apps on Hedera for the masses and not for people that are knowledeable 
 
 ## Backwards compatibility
 
-When the need for token associations is removed we assume this to be backwards compatible with existing wallets.
+When the need for token associations is removed we assume this to be backwards compatible with existing wallets. Parties that want this check because of e.g. tax implications will be able to opt-in.
 
 ## Security Implications
 
