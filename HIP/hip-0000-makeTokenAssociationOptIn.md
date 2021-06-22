@@ -1,9 +1,9 @@
-* hip: 20
+* hip: xx
 * title: Make the need for token association opt in
 * author: Gerbert Vandenberghe (gerbert-vandenberghe) en Davy Van Roy (alpa-coder)
 * type: Standard Track - Service
 * status: Draft
-* created: 2021-06-15
+* created: 2021-06-22
 * discussions-to: 
 * updated: 
 
@@ -25,6 +25,8 @@ When these users login with their webwallet on a store to buy fantokens or other
 We build apps on Hedera for the masses and not for people that are knowledeable on blockchain and crypto and to be able to do so we have to remove this need for token associations.
 
 ## Rationale
+
+Token associations is an advanced feature for users who are well aware of blockchain and cryptocurrency. For this we would make the need for token association an opt in in stead of opt out.
 
 ## Specification
 
