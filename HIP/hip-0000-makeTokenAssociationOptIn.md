@@ -1,14 +1,14 @@
 > *There has been discussion ([https://github.com/hashgraph/hedera-improvement-proposal/discussions/107](https://github.com/hashgraph/hedera-improvement-proposal/discussions/107)) and a proposed HIP draft ([https://github.com/ArkaneNetwork/hedera-improvement-proposal/blob/master/HIP/hip-0000-makeTokenAssociationOptIn.md](https://github.com/ArkaneNetwork/hedera-improvement-proposal/blob/master/HIP/hip-0000-makeTokenAssociationOptIn.md)) for a request for automatic token associations. This document builds on that concept to propose an updated HIP to the community. I have tried to not modify the structure of the original HIP draft as much as possible.*
 > 
 ​
-• hip: xx
-• title: Make the need for token association opt-in
-• author: Gerbert Vandenberghe (gerbert-vandenberghe) en Davy Van Roy (alpa-coder)
-• type: Standard Track - Service
-• status: Draft
-• created: 2021-06-22
-• discussions-to:
-• updated:
+* hip: xx
+* title: Make the need for token association opt-in
+* author: Gerbert Vandenberghe (gerbert-vandenberghe) en Davy Van Roy (alpa-coder)
+* type: Standard Track - Service
+* status: Draft
+* created: 2021-06-22
+* discussions-to:
+* updated:
 ​
 
 **Abstract**
