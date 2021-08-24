@@ -1,4 +1,5 @@
 > *There has been discussion ([https://github.com/hashgraph/hedera-improvement-proposal/discussions/107](https://github.com/hashgraph/hedera-improvement-proposal/discussions/107)) and a proposed HIP draft ([https://github.com/ArkaneNetwork/hedera-improvement-proposal/blob/master/HIP/hip-0000-makeTokenAssociationOptIn.md](https://github.com/ArkaneNetwork/hedera-improvement-proposal/blob/master/HIP/hip-0000-makeTokenAssociationOptIn.md)) for a request for automatic token associations. This document builds on that concept to propose an updated HIP to the community. I have tried to not modify the structure of the original HIP draft as much as possible.*
+> 
 ​
 • hip: xx
 • title: Make the need for token association opt-in
@@ -9,9 +10,11 @@
 • discussions-to:
 • updated:
 ​
+
 **Abstract**
 The need to associate a wallet with a certain token in order to be able to receive this token on the wallet poses usability issues and makes some business flows that are common practice in the blockchain and NFT space impossible.
 The proposal is to provide an ability for Hedera accounts to pre-approve a number of token association slots that can be used for any tokens without the need to explicitly associate.
+
 ​
 **Motivation**
 The need for token associations makes the user flow much more complex as every time the user wants to be able to receive a certain token he has to explicitly allow the wallet to receive this token. Since every NFT is a different token, the user should associate his wallet with each NFT he wants to receive.
@@ -19,13 +22,16 @@ We want to build applications that everyone can use, without the need to know an
 When these users log in with their web wallet on a store to buy fantokens or other NFTs, they should be able to immediately receive these tokens in their wallet, without complicating the user flow.
 We build apps on Hedera for the masses and not for people that are knowledgeable on blockchain and crypto and to be able to do so we have to remove this need for token associations.
 ****
+
 ​
 **Rationale**
 The token association is an advanced feature for users who are well aware of blockchain and cryptocurrency. For this, we would make the need for token association an opt-in instead of an opt-out.
 ****
 ​
+
 **Background on why the explicit token association is required:**
 ​
+
 Here are the reasons why the explicit token association is required (as articulated by Cooper Kuntz):
 ​
 1. DDoS risk on the network (a botnet can flood the network with incredibly cheap airdrops)
@@ -36,6 +42,7 @@ Here are the reasons why the explicit token association is required (as articula
 ​
 Above all, really, storage of the token associations uses up RAM on the mainnet nodes, and therefore there is a real cost for storing the token associations that needs to be paid by the account holder (or, in the future, by someone else). That requires the user to say which and how many tokens they want their accounts to be associated with.
 ​
+
 **Specification**
 ​
 Here is how the feature will work:
@@ -51,6 +58,7 @@ Corner cases:
 ​
 1. If the user receives a token through automatic association that they don't want to hold for reasons such as reputational risk or tax burdens, then they can manually dissociate that token. However, please note that this will not prevent somebody else from sending that token back to the user. This feature does not envisage a concept of a blacklist of tokens that the account holder doesn't want to be associated with. Implementing such a list will be as memory-intensive as the token association itself.
 ​
+
 **Backward compatibility**
 ​
 1. The default value of this numberOfAutomaticAssociations attribute will be 0. This means that the user needs to explicitly associate every token. This is compatible with how the system works today.
